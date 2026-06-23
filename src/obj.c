@@ -335,7 +335,7 @@ static int on_name(const obj_t *obj, void *user,
     } else {
         f(obj, u, value);
     }
-    nb++;
+    (*nb)++;
     return 0;
 }
 

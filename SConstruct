@@ -163,7 +163,7 @@ if env['mode'] == 'debug':
 if env['es6']:
     flags += ['-s', 'EXPORT_ES6=1', '-s', 'USE_ES6_IMPORT_META=0']
 
-env.Append(CCFLAGS=['-DNO_ARGP', '-DGLES2 1'] + flags)
+env.Append(CCFLAGS=['-DNO_ARGP', '-DGLES2 1'])
 env.Append(LINKFLAGS=flags)
 env.Append(LIBS=['GL'])
 
